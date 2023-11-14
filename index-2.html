@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fanta = 4
+        let cocaCola = 10
+        let cocaColaZero = 25
+        let cocaColaLight = 5
+        let acquaNaturale = 20
+        let acquaFrizzante = 10
+        let sceltaBibita = parseInt(prompt("Buonasera, scegli la bibita che desideri.\n\nPremi 1 per scegliere la fanta\n\nPremi 2 per scegliere la coca cola\n\n Premi 3 per scegliere l'acqua"))
+        switch (sceltaBibita) {
+            case 1:
+                let quantità = parseInt(prompt("Inserisci la quantita desiderata"))
+                if (fanta - quantità >= 0) {
+                    fanta = fanta - quantità;
+                    alert("Hai selezionato " + quantità + " fanta")
+
+                } else {
+                    alert("Quantità desiderata insufficente")
+                }
+
+                break;
+            case 2:
+                let sceltaCocaCola = prompt("che tipo di coca cola desideri: normale, zero oppure light?")
+                if (sceltaCocaCola === "normale") {
+                    let quantitàCocaCola = parseInt(prompt("inserisci la quantità desiderata"))
+                    if (cocaCola - quantitàCocaCola >= 0) {
+                        cocaCola = cocaCola - quantitàCocaCola;
+                        alert("Hai selezionato " + quantitàCocaCola + " coca-cola normale")
+
+                    } else {
+                        alert("Quantità desiderata insufficente")
+                    }
+                } else if (sceltaCocaCola === "zero") {
+                    let quantitàCocaCola = parseInt(prompt("inserisci la quantità desiderata"))
+                    if (cocaColaZero - quantitàCocaCola >= 0) {
+                        cocaColaZero = cocaColaZero - quantitàCocaCola;
+                        alert("Hai selezionato " + quantitàCocaCola + " coca-cola zero")
+
+                    } else {
+                        alert("Quantità desiderata insufficente")
+                    }
+                } else if (sceltaCocaCola === "light") {
+                    let quantitàCocaCola = parseInt(prompt("inserisci la quantità desiderata"))
+                    if (cocaColaLight - quantitàCocaCola >= 0) {
+                        cocaColaLight = cocaColaLight - quantitàCocaCola;
+                        alert("Hai selezionato " + quantitàCocaCola + " coca-cola light")
+
+                    } else {
+                        alert("Quantità desiderata insufficente")
+                    }
+                } else {
+                    alert("Scelta non valida.");
+                }
+                break;
+            case 3:
+                let sceltaAcqua = prompt("desideri l'acqua naturale o l'acqua frizzante?")
+                if (sceltaAcqua === "naturale") {
+                    let quantitàAcqua = parseInt(prompt("inserisci la quantità desiderata"))
+                    if (acquaNaturale - quantitàAcqua >= 0) {
+                        acquaNaturale = acquaNaturale - quantitàAcqua;
+                        alert("Hai selezionato " + quantitàAcqua + " Acqua naturale")
+
+                    } else {
+                        alert("Quantità desiderata insufficente")
+                    }
+                } else if (sceltaAcqua === "frizzante") {
+                    let quantitàAcqua = parseInt(prompt("inserisci la quantità desiderata"))
+                    if (acquaFrizzante - quantitàAcqua >= 0) {
+                        acquaFrizzante = acquaFrizzante - quantitàAcqua;
+                        alert("Hai selezionato " + quantitàAcqua + " Acqua frizzante")
+
+                    } else {
+                        alert("Quantità desiderata insufficente")
+                    }
+                } else {
+                    alert("Scelta non valida.");
+                }
+                break;
+            default:
+                alert("Scelta non valida")
+        }
+    </script>
+</body>
+
+</html>

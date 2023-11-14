@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let quantita_stock = 30;
+        let quantitàOrdinata = parseInt(prompt("Inserisci la quantità dell'ordine: "))
+        if (quantitàOrdinata <= 30 && quantitàOrdinata >= 0) {
+            console.log("Hai ordinato " + quantitàOrdinata + " maglie")
+        } else if (quantitàOrdinata > 30) {
+            console.log("La quantità ordinata non è disponibile, perchè ci sono " + quantita_stock + " in stock")
+        } else {
+            console.log("Ordine non valido")
+        }
+    </script>
+</body>
+
+</html>
